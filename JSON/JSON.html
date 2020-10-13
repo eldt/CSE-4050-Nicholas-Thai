@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JSON Project </title>   
+    </head>
+    <body>
+        <script type="text/javascript">
+        //Test of Json.parse with a string made in JSON format.
+            let programmer = 
+            `[
+                {
+                    "name" : "Nicholas",
+                    "favoriteColor": "Green",
+                    "isProgrammer" : true
+                },
+                {
+                    "name" : "Austman",
+                    "favoriteColor" : "White",
+                    "isProgrammer" : false
+                }
+            ]`
+            //Output to console to test functionality.
+            console.log(JSON.parse(programmer)[0].name)
+            console.log(JSON.parse(programmer)[1].name)
+
+            //Test of JSON.stringify.
+            var Student = {
+                name: 'Nicholas',
+                Age: '23',
+                ID: '005153716'
+            }
+            let Studentstring = JSON.stringify(Student);
+            console.log(Studentstring);
+            
+        </script>
+    </body>
+</html>

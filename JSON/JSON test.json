@@ -1,0 +1,10 @@
+{
+	"name" : "Nicholas",
+	"favoriteColor": "Green",
+	"isProgrammer" : true,
+	"me" : [{
+		"name" : "Nick",
+		"favoriteColor" : "Green",
+		"isProgrammer" : true
+	}]
+}
