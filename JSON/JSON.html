@@ -5,7 +5,8 @@
     </head>
     <body>
         <script type="text/javascript">
-        //Test of Json.parse with a string made in JSON format.
+        //Test of Json.parse with a string made in JSON format. 
+            //Setup the data set to be used for the parse. This data set is in the form of a string.
             let programmer = 
             `[
                 {
@@ -23,7 +24,7 @@
             console.log(JSON.parse(programmer)[0].name)
             console.log(JSON.parse(programmer)[1].name)
 
-            //Test of JSON.stringify.
+            //Test of JSON.stringify. Data set not in string is turned into a stringed formation.
             var Student = {
                 name: 'Nicholas',
                 Age: '23',
