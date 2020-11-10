@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Generator Project</title>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyC87oDEn44_qYeRo32nk7AxWOs9_-L7Ez0",
+    authDomain: "cse-4050-fantasynamegen-proj.firebaseapp.com",
+    databaseURL: "https://cse-4050-fantasynamegen-proj.firebaseio.com",
+    projectId: "cse-4050-fantasynamegen-proj",
+    storageBucket: "cse-4050-fantasynamegen-proj.appspot.com",
+    messagingSenderId: "66676105718",
+    appId: "1:66676105718:web:cbe6a732318590983fe7d7",
+    measurementId: "G-550EQJNJCX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src="app.js" defer></script>
+</head>
+
+<body>
+
+<h1>Testing APP Start</h1>
+
+<section id="whenSignedOut">
+
+  <button id="signInBtn" class="btn btn-primary">Sign in with Google</button>
+
+</section>
+
+<section id="whenSignedIn" hidden = "true">
+
+  <div id ="userDetails"></div>
+
+  <button id ="signOutBtn" class="btn btn-primary">Sign Out</button>
+
+</section>
+
+</body>
+</html>
